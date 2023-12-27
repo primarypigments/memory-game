@@ -97,4 +97,5 @@ const cardImages = [
         img: 'assets/images/beer.jpg'
       },
     ]
-  
+  // Shuffle code from https://javascript.info/
+    cardImages.sort(() => Math.random() - 0.5); 
