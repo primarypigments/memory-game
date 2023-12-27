@@ -90,3 +90,30 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+/*  Tablets and up */
+@media screen and (min-width: 768px) {
+
+    /* Hide Scrollbar*/
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    #logo {
+        font-size: 3vw;
+    }
+    }
+
+/*laptops and up*/
+@media screen and (min-width: 992px) {
+
+
+/* Memory game styles */
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 450px;
+}            
+
+}
