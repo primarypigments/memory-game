@@ -99,3 +99,15 @@ const cardImages = [
     ]
   // Shuffle code from https://javascript.info/
     cardImages.sort(() => Math.random() - 0.5); 
+
+    const grid = document.querySelector('.board')
+
+//creating board for game
+function createBoard() {
+  for (let i = 0; i < cardImages.length; i++) {
+    const memoryCard = document.createElement('img')
+    memoryCard.setAttribute('src', 'assets/images/blank.png')
+    memoryCard.setAttribute('data-id', i)
+    board.appendChild(memoryCard)
+  }
+}
