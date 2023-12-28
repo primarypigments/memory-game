@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     /*project styles*/
     font-family: "Roboto Mono", sans-serif;
+    background-color: black;
 }
 
 /*Header*/
@@ -59,15 +60,17 @@ h3 {
 
 /* Memory game styles */
 .board {
+    margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  height: 450px;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
 }            
 
 /*footer contact social media*/
 footer {
-    background-color: #272b54;
+    background-color: #035349a1;
     color: #f6f7f2;
     margin-top: auto;
 }
@@ -110,10 +113,12 @@ footer {
 
 /* Memory game styles */
 .board {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    height: 450px;
+ margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
 }            
 
 }
