@@ -137,10 +137,11 @@ function checkForMatch() {
     } else {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.png')
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.png')
-
+        alert('Sorry, Not a Match')
     }
     cardsPicked = []
     cardsPickedId = []
+    resultDisplay.textContent = cardsWon.length
     if (cardsMatch.length === cardImages.length / 2) {
         outcomeDisplay.textContent = 'Congratulations! You are a Match Master!'
     }
