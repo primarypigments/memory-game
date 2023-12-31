@@ -1,4 +1,6 @@
 // Array for card images
+
+// After i changed the image sizes, the image size is not correct.
 const cardImages = [
     {
         name: 'fries',
@@ -125,7 +127,7 @@ function checkForMatch() {
     if (cardOneId == cardTwoId) {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
-        alert('You have a Match!')
+    
     }
     else if (cardsPicked[0] === cardsPicked[1]) {
         alert('You found a match')
@@ -137,7 +139,7 @@ function checkForMatch() {
     } else {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
-        alert('Sorry, Not a Match')
+
     }
     cardsPicked = []
     cardsPickedId = []
@@ -156,7 +158,7 @@ function turnCard() {
     cardsPickedId.push(cardId)
     this.setAttribute('src', cardImages[cardId].img)
     if (cardsPicked.length === 2) {
-        setTimeout(checkForMatch, 500)
+        setTimeout(checkForMatch, 900)
     }
 }
 
@@ -219,3 +221,20 @@ stopBtn.addEventListener('click', stopTimer = () => {
     stop();
   });
  // End of stop Btn code
+
+ // Reset game button
+ const restbtn = document.querySelector('[data-action="reset"]');
+// reload page to reset the game https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript
+const reset = () => {
+    function resetClick() {
+      window.location.reload();
+    }
+    restbtn.addEventListener("click", resetClick);
+
+   
+  
+  }
+  
+  restbtn.addEventListener('click', stopTimer = () => {
+    reset();
+  });
