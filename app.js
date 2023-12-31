@@ -1,6 +1,6 @@
 // Array for card images
 
-// After i changed the image sizes, the image size is not correct.
+// After i changed the image sizes, the image size is not correct..
 const cardImages = [
     {
         name: 'fries',
