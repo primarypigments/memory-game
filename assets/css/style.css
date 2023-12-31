@@ -41,7 +41,7 @@ header {
 }
 
 #logo {
-    font-size: 5vw;
+    font-size: 6vw;
 
 }
 
@@ -60,12 +60,15 @@ h3 {
 
 /* Memory game styles */
 .board {
-    margin-top: 150px;
+    margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
   height: 1000px;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}            
 
 /* TIMER */
 
@@ -143,7 +146,7 @@ footer {
 
 /* Memory game styles */
 .board {
-    margin-top: 150px;
+    margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
