@@ -167,18 +167,31 @@ createBoard()
 // TIMER
 
 let amoutOftime
-// Start BTN
+// Timer starts a 0 seconds
+let timePassed = 0;
+// Start BTN Code to start timer.
 const startBtn = document.querySelector('[data-action="start"]');
+
 // Set the maxium amout of time
 const start = () => {
     whileRunning = true;
+    // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
     amoutOftime = setInterval(incrementTimer, 1000)
 }
+
+const area = (number) => {
+    return (number < 10) ? '0' + number : number;
+}
 // Time incresses by one second
+
     const incrementTimer = () => {
         timePassed++;
+        // https://stackoverflow.com/questions/41896116/javascript-math-floor-time-calculcation
+        // Used for Time calculations Minutes ans Seconds
+        const numberMinutes = Math.floor(timePassed / 60);
+        const numberSeconds = timePassed % 60;
     }
-
+    
     // Ability to start the  timer
     startBtn.addEventListener('click', startTimer = () => {
         start();
