@@ -60,11 +60,11 @@ h3 {
 
 /* Memory game styles */
 .board {
-    margin-top: 100px;
+    margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
+  width: 1000px;
+  height: 1000px;
   justify-content: center;
 }            
 
@@ -113,11 +113,11 @@ footer {
 
 /* Memory game styles */
 .board {
- margin-top: 100px;
+    margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
+  width: 1000px;
+  height: 600px;
   justify-content: center;
 }            
 
