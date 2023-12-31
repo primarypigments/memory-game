@@ -110,7 +110,7 @@ let cardsMatch = []
 function createBoard() {
     for (let i = 0; i < cardImages.length; i++) {
         const memoryCards = document.createElement('img')
-        memoryCards.setAttribute('src', 'assets/images/blank.png')
+        memoryCards.setAttribute('src', 'assets/images/blank.jpg')
         memoryCards.setAttribute('data-id', i)
         memoryCards.addEventListener('click', turnCard)
         board.appendChild(memoryCards)
@@ -123,20 +123,20 @@ function checkForMatch() {
     const cardTwoId = cardsPickedId[1]
 
     if (cardOneId == cardTwoId) {
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.png')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.png')
-        alert('You have clicked the same image!')
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
+        alert('You have a Match!')
     }
     else if (cardsPicked[0] === cardsPicked[1]) {
         alert('You found a match')
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/white.png')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.png')
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg')
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg')
         memoryCards[cardOneId].removeEventListener('click', turnCard)
         memoryCards[cardTwoId].removeEventListener('click', turnCard)
         cardsMatch.push(cardsPicked)
     } else {
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.png')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.png')
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
         alert('Sorry, Not a Match')
     }
     cardsPicked = []
@@ -144,6 +144,9 @@ function checkForMatch() {
     resultDisplay.textContent = cardsWon.length
     if (cardsMatch.length === cardImages.length / 2) {
         outcomeDisplay.textContent = 'Congratulations! You are a Match Master!'
+       
+      
+
     }
 }
 //turn cards over 
@@ -160,3 +163,4 @@ function turnCard() {
 
 
 createBoard()
+
