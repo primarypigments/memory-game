@@ -205,3 +205,17 @@ const area = (number) => {
       });
 // End of start timer
 
+// Stop button
+
+// clearinterval https://www.w3schools.com/jsref/met_win_clearinterval.asp
+const stop = () => {
+    whileRunning = false;
+    clearInterval(amoutOftime);
+  }
+const stopBtn = document.querySelector('[data-action="stop"]');
+
+
+stopBtn.addEventListener('click', stopTimer = () => {
+    stop();
+  });
+ // End of stop Btn code
