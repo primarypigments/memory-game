@@ -164,3 +164,22 @@ function turnCard() {
 
 createBoard()
 
+// TIMER
+
+let amoutOftime
+// Start BTN
+const startBtn = document.querySelector('[data-action="start"]');
+// Set the maxium amout of time
+const start = () => {
+    whileRunning = true;
+    amoutOftime = setInterval(incrementTimer, 1000)
+}
+// Time incresses by one second
+    const incrementTimer = () => {
+        timePassed++;
+    }
+
+    // Ability to start the  timer
+    startBtn.addEventListener('click', startTimer = () => {
+        start();
+      });
