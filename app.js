@@ -171,28 +171,37 @@ let amoutOftime
 let timePassed = 0;
 // Start BTN Code to start timer.
 const startBtn = document.querySelector('[data-action="start"]');
+// Relays the time to the Timer ´, so that the time will chnage on the timer
+const minutes = document.querySelector('.minutes');
+const seconds = document.querySelector('.seconds');
+
 
 // Set the maxium amout of time
 const start = () => {
     whileRunning = true;
     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
-    amoutOftime = setInterval(incrementTimer, 1000)
+    amoutOftime = setInterval(increaseTimer, 1000)
 }
 
 const area = (number) => {
-    return (number < 10) ? '0' + number : number;
+    return (number > 10) ? '0' + number : number;
 }
 // Time incresses by one second
 
-    const incrementTimer = () => {
+    const increaseTimer = () => {
         timePassed++;
         // https://stackoverflow.com/questions/41896116/javascript-math-floor-time-calculcation
         // Used for Time calculations Minutes ans Seconds
         const numberMinutes = Math.floor(timePassed / 60);
         const numberSeconds = timePassed % 60;
+   //inner text https://www.w3schools.com/jsref/prop_node_innertext.asp#:~:text=The%20innerText%20property%20returns%3A,hidden%20text%2C%20but%20without%20tags.
+   minutes.innerText = area(numberMinutes);
+   seconds.innerText = area(numberSeconds);
     }
-    
+      
     // Ability to start the  timer
     startBtn.addEventListener('click', startTimer = () => {
         start();
       });
+// End of start timer
+
