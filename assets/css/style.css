@@ -39,6 +39,40 @@ header {
     align-items: center;
     text-align: center;
 }
+/* Animated Logo*/
+
+.animation {
+    font-weight: 700;
+    font-size: 3.5em;
+  }
+  
+  .animation .text {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .animation .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .animation .line { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .animation .crazy {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 #logo {
     font-size: 6vw;
