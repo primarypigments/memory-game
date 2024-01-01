@@ -223,6 +223,7 @@ stopBtn.addEventListener('click', stopTimer = () => {
  // End of stop Btn code
 
  // Reset game button
+ // Bug Must double click for it to work
  const restbtn = document.querySelector('[data-action="reset"]');
 // reload page to reset the game https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript
 const reset = () => {
