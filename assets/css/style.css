@@ -56,52 +56,57 @@ h3 {
 
 /* Memory game styles */
 .board {
-    margin-top: 170px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  
-} 
-.board img{
+    margin-top: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 15vw;
+    margin-left: 15vw;
 
-    width: 12vw;
-    height: 12vw;
+}
+
+.board img {
+
+    width: 8vw;
+    height: 8vw;
     margin: 1em auto;
-}           
+}
 
 /* TIMER */
 
 .timer {
     font-size: 80px;
 }
-  /* Button styles */
-  
-  .btn-base {
-      box-shadow: 3px 4px 0px 0px #0a2f52;
-      background:linear-gradient(to bottom, #33506d 5%, #2468ac 100%);
-      background-color:#33506d;
-      border-radius:5px;
-      border:1px solid #33506d;
-      display:inline-block;
-      cursor:pointer;
-      color:#f6f7f2;
-      font-family:"Roboto Mono", sans-serif;
-      font-size:17px;
-      font-weight:bold;
-      padding:12px 44px;
-      text-decoration:none;
-      text-shadow:0px 1px 0px #2468ac;
-  }
-  .btn-base:hover {
-      background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-      background-color:#378de5;
-  }
-  .btn-base:active {
-      position:relative;
-      top:1px;
-  }
+
+/* Button styles */
+
+.btn-base {
+    box-shadow: 3px 4px 0px 0px #0a2f52;
+    background: linear-gradient(to bottom, #33506d 5%, #2468ac 100%);
+    background-color: #33506d;
+    border-radius: 5px;
+    border: 1px solid #33506d;
+    display: inline-block;
+    cursor: pointer;
+    color: #f6f7f2;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2468ac;
+}
+
+.btn-base:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    background-color: #378de5;
+}
+
+.btn-base:active {
+    position: relative;
+    top: 1px;
+}
+
 /*footer contact social media*/
 footer {
     background-color: #035349a1;
@@ -139,22 +144,23 @@ footer {
     #logo {
         font-size: 3vw;
     }
-    }
+}
 
 /*laptops and up*/
 @media screen and (min-width: 992px) {
 
 
-/* Memory game styles */
-.board {
-    margin-top: 170px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}            
+    /* Memory game styles */
+    .board {
+        margin-top: 12vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }
+
 /*  disable images (to avoid more than 2 being clicked at a time)*/
 .disable {
     pointer-events: none;
-  }
+}
