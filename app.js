@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // Array for card images
 
 // After i changed the image sizes, the image size is not correct..
