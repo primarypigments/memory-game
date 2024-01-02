@@ -100,57 +100,49 @@ const cardImages = [
         name: 'beer',
         img: 'assets/images/beer.jpg'
     },
-]
+];
 // Shuffle code from https://javascript.info/
 cardImages.sort(() => Math.random() - 0.5);
 // Memory game base code https://www.youtube.com/watch?v=ec8vSKJuZTk
-const board = document.querySelector('.board')
-const outcomeDisplay = document.querySelector('#result')
-let cardsPicked = []
-let cardsPickedId = []
-let cardsMatch = []
+const board = document.querySelector('.board');
+const outcomeDisplay = document.querySelector('#result');
+let cardsPicked = [];
+let cardsPickedId = [];
+let cardsMatch = [];
 
 //creating board for game
 function createBoard() {
     for (let i = 0; i < cardImages.length; i++) {
-        const memoryCards = document.createElement('img')
-        memoryCards.setAttribute('src', 'assets/images/blank.jpg')
-        memoryCards.setAttribute('data-id', i)
-        memoryCards.addEventListener('click', turnCard)
-        board.appendChild(memoryCards)
+        const memoryCards = document.createElement('img');
+        memoryCards.setAttribute('src', 'assets/images/blank.jpg');
+        memoryCards.setAttribute('data-id', i);
+        memoryCards.addEventListener('click', turnCard);
+        board.appendChild(memoryCards);
     }
 }
 //Build for checking for matches
 function checkForMatch() {
-    const memoryCards = document.querySelectorAll('img')
-    const cardOneId = cardsPickedId[0]
-    const cardTwoId = cardsPickedId[1]
+    const memoryCards = document.querySelectorAll('img');
+    const cardOneId = cardsPickedId[0];
+    const cardTwoId = cardsPickedId[1];
 
-    if (cardOneId == cardTwoId) {
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
-    
-    }
-    else if (cardsPicked[0] === cardsPicked[1]) {
-        alert('You found a match')
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg')
-        memoryCards[cardOneId].removeEventListener('click', turnCard)
-        memoryCards[cardTwoId].removeEventListener('click', turnCard)
-        cardsMatch.push(cardsPicked)
+    if (cardsPicked[0] === cardsPicked[1]) {
+        alert('You found a match');
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
+        memoryCards[cardOneId].removeEventListener('click', turnCard);
+        memoryCards[cardTwoId].removeEventListener('click', turnCard);
+        cardsMatch.push(cardsPicked);
     } else {
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg');
 
     }
-    cardsPicked = []
-    cardsPickedId = []
-    resultDisplay.textContent = cardsWon.length
+    cardsPicked = [];
+    cardsPickedId = [];
+    // resultDisplay.textContent = cardsWon.length
     if (cardsMatch.length === cardImages.length / 2) {
-        outcomeDisplay.textContent = 'Congratulations! You are a Match Master!'
-       
-      
-
+        outcomeDisplay.textContent = 'Congratulations! You are a Match Master!';
     }
 }
 //turn cards over 
@@ -179,11 +171,11 @@ function turnCard() {
 
 
 
-createBoard()
+createBoard();
 
 // TIMER
 
-let amoutOftime
+let amoutOftime;
 // Timer starts a 0 seconds
 let timePassed = 0;
 // Start BTN Code to start timer.
@@ -197,29 +189,29 @@ const seconds = document.querySelector('.seconds');
 const start = () => {
     whileRunning = true;
     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
-    amoutOftime = setInterval(increaseTimer, 1000)
-}
+    amoutOftime = setInterval(increaseTimer, 1000);
+};
 
 const area = (number) => {
     return (number > 10) ? '0' + number : number;
-}
+};
 // Time incresses by one second
 
-    const increaseTimer = () => {
-        timePassed++;
-        // https://stackoverflow.com/questions/41896116/javascript-math-floor-time-calculcation
-        // Used for Time calculations Minutes ans Seconds
-        const numberMinutes = Math.floor(timePassed / 60);
-        const numberSeconds = timePassed % 60;
-   //inner text https://www.w3schools.com/jsref/prop_node_innertext.asp#:~:text=The%20innerText%20property%20returns%3A,hidden%20text%2C%20but%20without%20tags.
-   minutes.innerText = area(numberMinutes);
-   seconds.innerText = area(numberSeconds);
-    }
-      
-    // Ability to start the  timer
-    startBtn.addEventListener('click', startTimer = () => {
-        start();
-      });
+const increaseTimer = () => {
+    timePassed++;
+    // https://stackoverflow.com/questions/41896116/javascript-math-floor-time-calculcation
+    // Used for Time calculations Minutes ans Seconds
+    const numberMinutes = Math.floor(timePassed / 60);
+    const numberSeconds = timePassed % 60;
+    //inner text https://www.w3schools.com/jsref/prop_node_innertext.asp#:~:text=The%20innerText%20property%20returns%3A,hidden%20text%2C%20but%20without%20tags.
+    minutes.innerText = area(numberMinutes);
+    seconds.innerText = area(numberSeconds);
+};
+
+// Ability to start the  timer
+startBtn.addEventListener('click', startTimer = () => {
+    start();
+});
 // End of start timer
 
 // Stop button
@@ -228,28 +220,20 @@ const area = (number) => {
 const stop = () => {
     whileRunning = false;
     clearInterval(amoutOftime);
-  }
+};
 const stopBtn = document.querySelector('[data-action="stop"]');
-
 
 stopBtn.addEventListener('click', stopTimer = () => {
     stop();
-  });
- // End of stop Btn code
+});
+// End of stop Btn code
 
- // Reset game button
- // Bug Must double click for it to work
- const restbtn = document.querySelector('[data-action="reset"]');
+// Reset game button
+// Bug Must double click for it to work // Bug fixed by removing redundent code. From 3 lines to one line.
+const restbtn = document.querySelector('[data-action="reset"]');
 // reload page to reset the game https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript
-const reset = () => {
-    function resetClick() {
-      window.location.reload();
-    }
-    restbtn.addEventListener("click", resetClick);
-  }
-  
-  restbtn.addEventListener('click', stopTimer = () => {
-    reset();
-  });
+restbtn.addEventListener("click", function () {
+    location.reload();
+});
 
-  // End of reset btn
+// End of reset btn
