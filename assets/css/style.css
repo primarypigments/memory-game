@@ -9,10 +9,6 @@
     font-family: "Roboto Mono", sans-serif;
 }
 
-/* Hide Scrollbar*/
-html::-webkit-scrollbar {
-    display: none;
-}
 
 /*Gerneral Styles*/
 body {
