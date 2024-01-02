@@ -236,38 +236,5 @@ const reset = () => {
   restbtn.addEventListener('click', stopTimer = () => {
     reset();
   });
+
   // End of reset btn
-
-  // Animated Logo  https://tobiasahlin.com/moving-letters/#11
-
-var textWrapper = document.querySelector('.animation .crazy');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='crazy'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.animation .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 1000
-  })
-  .add({
-    targets: '.animation .line',
-    translateX: [0, document.querySelector('.animation .crazy').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.animation .crazy',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: (el, i) => 34 * (i+1)
-  }).add({
-    targets: '.animation',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 10000
-  });
