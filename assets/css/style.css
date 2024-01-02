@@ -156,3 +156,7 @@ footer {
 }            
 
 }
+/*  disable images (to avoid more than 2 being clicked at a time)*/
+.disable {
+    pointer-events: none;
+  }
