@@ -153,12 +153,25 @@ function checkForMatch() {
 }
 //turn cards over 
 function turnCard() {
-    let cardId = this.getAttribute('data-id')
-    cardsPicked.push(cardImages[cardId].name)
-    cardsPickedId.push(cardId)
-    this.setAttribute('src', cardImages[cardId].img)
+    let cardId = this.getAttribute('data-id');
+    cardsPicked.push(cardImages[cardId].name);
+    cardsPickedId.push(cardId);
+    this.src = cardImages[cardId].img;
+    // two cards clicked
     if (cardsPicked.length === 2) {
-        setTimeout(checkForMatch, 900)
+        let memoryCards = document.querySelectorAll('img');
+        // loop through images and disable them (to avoid more than 2 being clicked at a time)
+        memoryCards.forEach(card => {
+            card.classList.add("disable");
+        });
+        setTimeout(() => {
+            // check for a match or not
+            checkForMatch();
+            // re-enable the cards to be clickable again
+            memoryCards.forEach(card => {
+                card.classList.remove("disable");
+            });
+        }, 900);
     }
 }
 
