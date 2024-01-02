@@ -59,12 +59,17 @@ h3 {
     margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
-  height: 1000px;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-}            
+  
+} 
+.board img{
+
+    width: 12vw;
+    height: 12vw;
+    margin: 1em auto;
+}           
 
 /* TIMER */
 
