@@ -192,8 +192,9 @@ const start = () => {
     amoutOftime = setInterval(increaseTimer, 1000);
 };
 
+// Bug fix  (timer not diplaying correctly. Changed > to <)
 const area = (number) => {
-    return (number > 10) ? '0' + number : number;
+    return (number < 10) ? '0' + number : number;
 };
 // Time incresses by one second
 
