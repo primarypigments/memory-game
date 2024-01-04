@@ -177,12 +177,36 @@ footer {
 
     /* Memory game styles */
     .board {
-        margin-top: 12vw;
+        margin-top: 14vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    .board img {
 
+        width: 8vw;
+        height: 8vw;
+        margin: 1em auto;
+    }
+    .timer {
+        font-size: 4vw;
+    }
+    .btn-base {
+        box-shadow: 3px 4px 0px 0px #0a2f52;
+        background: linear-gradient(to bottom, #33506d 5%, #2468ac 100%);
+        background-color: #33506d;
+        border-radius: 5px;
+        border: 1px solid #33506d;
+        display: inline-block;
+        cursor: pointer;
+        color: #f6f7f2;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: .4em .90em;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2468ac;
+    }
 }
 
 /*  disable images (to avoid more than 2 being clicked at a time)*/
