@@ -81,7 +81,7 @@ button {
 
 /* Memory game styles */
 .board {
-    margin-top: 25vw;
+    margin-top: 42vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,18 +92,18 @@ button {
 
 .board img {
 
-    width: 8vw;
-    height: 8vw;
+    width: 16vw;
+    height: 16vw;
     margin: 1em auto;
 }
 
 /* TIMER */
 
 .timer {
-    font-size: 80px;
+    font-size: 10vw;
 }
 
-/* Button styles */
+/* Timer Button styles */
 
 .btn-base {
     box-shadow: 3px 4px 0px 0px #0a2f52;
@@ -115,9 +115,9 @@ button {
     cursor: pointer;
     color: #f6f7f2;
     font-family: "Roboto Mono", sans-serif;
-    font-size: 17px;
+    font-size: .75em;
     font-weight: bold;
-    padding: 12px 44px;
+    padding: .25em .60em;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2468ac;
 }
