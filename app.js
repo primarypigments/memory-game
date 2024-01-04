@@ -104,8 +104,12 @@ const cardImages = [
 // Shuffle code from https://javascript.info/
 cardImages.sort(() => Math.random() - 0.5);
 // Memory game base code https://www.youtube.com/watch?v=ec8vSKJuZTk
-const board = document.querySelector('.board');
+let board = document.querySelector('.board');
 const outcomeDisplay = document.querySelector('#result');
+// Dialog https://www.youtube.com/watch?v=ywtkJkxJsdg
+const closeBtn = document.querySelector("[data-close-complete]");
+const dataScreen = document.querySelector("[data-screen]")
+// End Dialog 
 let cardsPicked = [];
 let cardsPickedId = [];
 let cardsMatch = [];
@@ -127,11 +131,11 @@ function checkForMatch() {
     const cardTwoId = cardsPickedId[1];
 
     if (cardsPicked[0] === cardsPicked[1]) {
-        alert('You found a match');
+      
         memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
-        memoryCards[cardOneId].removeEventListener('click', turnCard);
-        memoryCards[cardTwoId].removeEventListener('click', turnCard);
+        memoryCards[cardOneId].removeEventListener('onclick', turnCard);
+        memoryCards[cardTwoId].removeEventListener('onclick', turnCard);
         cardsMatch.push(cardsPicked);
     } else {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
@@ -140,9 +144,17 @@ function checkForMatch() {
     }
     cardsPicked = [];
     cardsPickedId = [];
-    // resultDisplay.textContent = cardsWon.length
     if (cardsMatch.length === cardImages.length / 2) {
-        outcomeDisplay.textContent = 'Congratulations! You are a Match Master!';
+         // Dialog Code
+        
+        dataScreen.showModal()
+      
+         closeBtn.addEventListener("click",function () {
+             location.reload();() => {
+        
+              dataScreen.close()
+          }});
+         // End Dialog Code
     }
 }
 //turn cards over 
