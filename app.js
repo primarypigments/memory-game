@@ -3,6 +3,7 @@
 // Array for card images
 
 // After i changed the image sizes, the image size is not correct..
+// Fix was to make the images more responive in CSS.
 const cardImages = [
     {
         name: 'fries',
@@ -58,7 +59,7 @@ const cardImages = [
     },
     {
         name: 'hamburger',
-        img: 'assets/images/malt.jpg'
+        img: 'assets/images/hamburger.jpg'
     },
     {
         name: 'malt',
