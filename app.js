@@ -209,12 +209,12 @@ const seconds = document.querySelector('.seconds');
 
 // starts the timer and stop the setinterval being called multiple times
 const start = () => {
-   // whileRunning = false;
-   //clearInterval(amoutOftime);
-    whileRunning = true;
-    // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
-    amoutOftime = setInterval(increaseTimer, 1000);
-};
+     whileRunning = true;
+     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
+     amoutOftime = setInterval(increaseTimer, 1000);
+     document.querySelector("#clicks").disabled = true;
+
+}; 
 
 // Bug fix  (timer not diplaying correctly. Changed > to <)
 const area = (number) => {
@@ -245,6 +245,7 @@ startBtn.addEventListener('click', startTimer = () => {
 const stop = () => {
     whileRunning = false;
     clearInterval(amoutOftime);
+    document.querySelector("#clicks").disabled = false;
 };
 const stopBtn = document.querySelector('[data-action="stop"]');
 
