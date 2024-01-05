@@ -130,18 +130,18 @@ function checkForMatch() {
     const memoryCards = document.querySelectorAll('img');
     const cardOneId = cardsPickedId[0];
     const cardTwoId = cardsPickedId[1];
-// Code here is pervent when the same card is clicked twice by diableing the clicked card.
-    
-if(cardOneId == cardTwoId) {
+    // Code here is pervent when the same card is clicked twice by diableing the clicked card.
+
+    if (cardOneId == cardTwoId) {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
         memoryCards.forEach(card => {
             card.classList.remove("disable");
         });
-      }
-// end of disabling code
-  else if (cardsPicked[0] === cardsPicked[1]) {
-      
+    }
+    // end of disabling code
+    else if (cardsPicked[0] === cardsPicked[1]) {
+
         memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
         memoryCards[cardOneId].removeEventListener('onclick', turnCard);
@@ -155,16 +155,17 @@ if(cardOneId == cardTwoId) {
     cardsPicked = [];
     cardsPickedId = [];
     if (cardsMatch.length === cardImages.length / 2) {
-         // Dialog Code
-        
+        // Dialog Code
+
         dataScreen.showModal()
-      
-         closeBtn.addEventListener("click",function () {
-             location.reload();() => {
-        
-              dataScreen.close()
-          }});
-         // End Dialog Code
+
+        closeBtn.addEventListener("click", function () {
+            location.reload(); () => {
+
+                dataScreen.close()
+            }
+        });
+        // End Dialog Code
     }
 }
 //turn cards over 
@@ -202,6 +203,7 @@ let amoutOftime;
 let timePassed = 0;
 // Start BTN Code to start timer.
 const startBtn = document.querySelector('[data-action="start"]');
+
 // Relays the time to the Timer ´, so that the time will chnage on the timer
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
@@ -209,12 +211,12 @@ const seconds = document.querySelector('.seconds');
 
 // starts the timer and stop the setinterval being called multiple times
 const start = () => {
-     whileRunning = true;
-     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
-     amoutOftime = setInterval(increaseTimer, 1000);
-     document.querySelector("#clicks").disabled = true;
+    whileRunning = true;
+    // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
+    amoutOftime = setInterval(increaseTimer, 1000);
+    document.querySelector("#clicks").disabled = true;
 
-}; 
+};
 
 // Bug fix  (timer not diplaying correctly. Changed > to <)
 const area = (number) => {
