@@ -207,8 +207,10 @@ const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
 
 
-// Set the maxium amout of time
+// starts the timer and stop the setinterval being called multiple times
 const start = () => {
+   // whileRunning = false;
+   //clearInterval(amoutOftime);
     whileRunning = true;
     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
     amoutOftime = setInterval(increaseTimer, 1000);
