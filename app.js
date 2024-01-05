@@ -130,8 +130,17 @@ function checkForMatch() {
     const memoryCards = document.querySelectorAll('img');
     const cardOneId = cardsPickedId[0];
     const cardTwoId = cardsPickedId[1];
-
-    if (cardsPicked[0] === cardsPicked[1]) {
+// Code here is pervent when the same card is clicked twice by diableing the clicked card.
+    
+if(cardOneId == cardTwoId) {
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards.forEach(card => {
+            card.classList.remove("disable");
+        });
+      }
+// end of disabling code
+  else if (cardsPicked[0] === cardsPicked[1]) {
       
         memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
