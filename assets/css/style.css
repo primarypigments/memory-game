@@ -19,6 +19,14 @@ body {
     font-family: "Roboto Mono", sans-serif;
     background-color: black;
 }
+#start {
+   
+    background: url("../images/crazymemory.jpg") no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 /*Header*/
 header {
