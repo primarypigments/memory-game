@@ -15,13 +15,46 @@
     <!--Style Sheet-->
   <link rel="stylesheet" href="assets/css/style.css"></link>
 </head>
-<body id="start">
+<body>
+  <dialog data-screen>
+    <div>You beat Crazy Memory</div>
+    <button data-close-complete>Reset Game</button>
+  </dialog>
+
 
   <header>
-    <h1 id="logo"></h1>
+
+    <h1 id="logo">Crazy Memory</h1>
+    <h3>Score:<span id="result"></span></h3>
+        <!-- Timer-->
+        <div>
+            <div class="timer">
+              <span class="minutes">
+                00
+              </span>
+              :
+              <span class="seconds">
+                00
+              </span>
+            </div>
+            <div class="time-buttons">
+              <button id="clicks"  class="btn-base" data-action="start">
+                Start
+              </button>
+              <button  class="btn-base" data-action="stop">
+                Stop
+              </button>
+              <button class="btn-base" data-action="reset">
+                Reset
+              </button>
+            </div>
+          </div>
+    
 </header>
-<main >
-  
+<main>
+  <div class="board">
+  </div>
+
 </main>
    <!--Footer-->
    <footer>
@@ -59,7 +92,7 @@
 
 <!--Link for font awesome ie social media-->
 <script src="https://kit.fontawesome.com/50c170cc26.js" crossorigin="anonymous"></script>
-
+<script src="app.js"></script>
 
 </body>
 </html>
