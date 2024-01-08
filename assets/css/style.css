@@ -183,6 +183,15 @@ footer {
 @media screen and (min-width: 992px) {
 
 
+    #start {
+   
+        background: url("../images/crazymemory.jpg") no-repeat top center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
     /* Memory game styles */
     .board {
         margin-top: 14vw;
