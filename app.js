@@ -121,10 +121,20 @@ function createBoard() {
         const memoryCards = document.createElement('img');
         memoryCards.setAttribute('src', 'assets/images/blank.jpg');
         memoryCards.setAttribute('data-id', i);
-        memoryCards.addEventListener('click', turnCard);
+// Move the event listener to carEventlistener to prevent the user to be able to click the cards before pushing the start bitton,
+        memoryCards.classList.add("card")
+        // memoryCards.addEventListener('click', turnCard);
         board.appendChild(memoryCards);
     }
 }
+// Loop call the fucktion to enable to turn card over, this is called at the start button on the timer
+function cardEventListener() {
+    let cards = document.querySelectorAll('.card');
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('click', turnCard)
+    }
+}
+
 //Build for checking for matches
 function checkForMatch() {
     const memoryCards = document.querySelectorAll('img');
@@ -177,7 +187,7 @@ function turnCard() {
     // two cards clicked
     if (cardsPicked.length === 2) {
         let memoryCards = document.querySelectorAll('img');
-        // loop through images and disable them (to avoid more than 2 being clicked at a time)
+         // loop through images and disable them (to avoid more than 2 being clicked at a time)
         memoryCards.forEach(card => {
             card.classList.add("disable");
         });
@@ -215,7 +225,8 @@ const start = () => {
     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
     amoutOftime = setInterval(increaseTimer, 1000);
     document.querySelector("#clicks").disabled = true;
-
+    //Calling the fucktion so the cards are able to be fliped- 
+    cardEventListener()
 };
 
 // Bug fix  (timer not diplaying correctly. Changed > to <)
