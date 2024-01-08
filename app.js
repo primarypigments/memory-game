@@ -106,7 +106,6 @@ const cardImages = [
 cardImages.sort(() => Math.random() - 0.5);
 // Memory game base code https://www.youtube.com/watch?v=ec8vSKJuZTk
 let board = document.querySelector('.board');
-const outcomeDisplay = document.querySelector('#result');
 // Dialog https://www.youtube.com/watch?v=ywtkJkxJsdg
 const closeBtn = document.querySelector("[data-close-complete]");
 const dataScreen = document.querySelector("[data-screen]")
