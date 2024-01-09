@@ -147,6 +147,21 @@ button {
 .rules-content {
     font-family: "Roboto Mono", sans-serif;
     min-width: 30vw;   
+    
+}
+
+/* index dialog for rules of crazy memory*/
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
 /* TIMER */
 
 .timer {
