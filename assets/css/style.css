@@ -196,6 +196,9 @@ button {
     position: relative;
     top: 1px;
 }
+.time-buttons {
+    margin: 0.5em auto;
+}
 
 /*footer contact social media*/
 footer {
