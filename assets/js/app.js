@@ -166,9 +166,11 @@ function checkForMatch() {
     if (cardsMatch.length === cardImages.length / 2) {
         // Dialog Code
 
+        { clearInterval(amoutOftime)
+        }
         dataScreen.showModal()
 
-        closeBtn.addEventListener("click", function () {
+        closeBtn.addEventListener("click", function () { clearInterval(amoutOftime)
             location.reload(); () => {
 
                 dataScreen.close()
