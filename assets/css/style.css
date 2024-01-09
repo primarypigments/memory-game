@@ -108,6 +108,47 @@ button {
     margin: 1em auto;
 }
 
+/* Start Screen Rules Drop Down Button */
+
+.rulesbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  
+  .rules {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .rules-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .rules-content a:hover {background-color: #ddd;}
+  
+  .rules:hover .rules-content {display: block;}
+  
+  .rules:hover .rulesbtn {background-color: #449b47;}
+  
+
 /* TIMER */
 
 .timer {
