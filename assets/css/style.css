@@ -108,46 +108,59 @@ button {
     margin: 1em auto;
 }
 
-/* Start Screen Rules Drop Down Button */
+/* Start Screen Rules Drop Down Button and Begain Game Button */
+.begainbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1vw;
+    font-size: 1yw;
+    border: none;
+    flex-direction: row-reverse;
+    margin-top: 1vw;
+}
 
+.begain-game {
+    position: relative;
+    display: inline-block;
+    
+}
+.begain-game:hover .begainbtn {
+    background-color: #449b47;
+}
 .rulesbtn {
     background-color: #04AA6D;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 1vw;
+    font-size: 1yw;
     border: none;
-  }
-  
-  
-  .rules {
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.rules {
     position: relative;
     display: inline-block;
-  }
-  
- 
-  .dropdown-content {
+}
+
+.rules-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: fit-content;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
+    margin-left: 1vw;
+    
+}
 
-  .rules-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.rules:hover .rules-content {
     display: block;
-  }
-  
-  .rules-content a:hover {background-color: #ddd;}
-  
-  .rules:hover .rules-content {display: block;}
-  
-  .rules:hover .rulesbtn {background-color: #449b47;}
-  
+}
+
+.rules:hover .rulesbtn {
+    background-color: #449b47;
+}
+
 
 /* TIMER */
 
@@ -272,6 +285,26 @@ footer {
         text-decoration: none;
         text-shadow: 0px 1px 0px #2468ac;
     }
+/* Rukes and Begain game button*/
+    .begainbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 1.5vw;
+        font-size: 1.5yw;
+        border: none;
+        flex-direction: row-reverse;
+        margin-top: 1vw;
+    }
+    .rulesbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1.5vw;
+    font-size: 1.6yw;
+    border: none;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
 }
 
 /*  disable images (to avoid more than 2 being clicked at a time)*/
