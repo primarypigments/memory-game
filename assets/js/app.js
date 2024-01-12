@@ -168,7 +168,7 @@ function checkForMatch() {
 
         { clearInterval(amoutOftime)
         }
-        dataScreen.showModal()
+        dataScreen.showModal(document.getElementById("total-time").innerText = timePassed)
 
         closeBtn.addEventListener("click", function () { clearInterval(amoutOftime)
             location.reload(); () => {
