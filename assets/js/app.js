@@ -102,7 +102,7 @@ const cardImages = [
         img: 'assets/images/beer.jpg'
     },
 ];
-// Shuffle code from https://javascript.info/
+// Shuffle code https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 cardImages.sort(() => Math.random() - 0.5);
 // Memory game base code https://www.youtube.com/watch?v=ec8vSKJuZTk
 let board = document.querySelector('.board');
