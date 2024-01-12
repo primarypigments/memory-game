@@ -31,7 +31,7 @@ body {
 
 /*Header*/
 header {
-    background-color: #035349a1;
+    background-color: #035349a1; 
     color: #f6f7f2;
     font-size: 20px;
     padding: 0 1rem;
@@ -61,7 +61,7 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-/* Dialog Styles */
+/* Dialog.js Styles */
 dialog {
     position: absolute;
     inset-inline-start: 0px;
@@ -76,18 +76,6 @@ dialog {
     border-color: initial;
     border-image: initial;
     padding: 1em;
-}
-
-button {
-    background-color: #04AA6D;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
 
 /* Memory game styles */
@@ -108,14 +96,23 @@ button {
     margin: .5em auto;
 }
 
-/* Start Screen Rules Drop Down Button and Begain Game Button */
+/* Start Screen Rules Button and Begain Game Button */
 .beginbtn {
-    font-family: "Roboto Mono", sans-serif;
     background-color: #04AA6D;
-    color: white;
-    padding: 1vw;
-    font-size: 1yw;
-    border: none;
+    color: #f6f7f2;
+    flex-direction: row-reverse;
+    box-shadow: 3px 4px 0px 0px#272b54;
+    background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+    border-radius: 5px;
+    border: 1px solid#f6f7f2;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .4em .90em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #04AA6D;
     flex-direction: row-reverse;
     margin-top: 1vw;
 }
@@ -126,7 +123,8 @@ button {
     
 }
 .begin-game:hover .beginbtn {
-    background-color: #449b47;
+    background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
+    background-color:  #04AA6D;
 }
 .rulesbtn {
     font-family: "Roboto Mono", sans-serif;
@@ -171,11 +169,11 @@ button {
 /* Timer Button styles */
 
 .btn-base {
-    box-shadow: 3px 4px 0px 0px #0a2f52;
-    background: linear-gradient(to bottom, #33506d 5%, #2468ac 100%);
-    background-color: #33506d;
+    box-shadow: 3px 4px 0px 0px #272b54;
+    background: linear-gradient(to bottom, #04AA6D 5%,  #06e392 100%);
+    background-color:  #f6f7f2;
     border-radius: 5px;
-    border: 1px solid #33506d;
+    border: 1px solid #04AA6D;
     display: inline-block;
     cursor: pointer;
     color: #f6f7f2;
@@ -184,12 +182,12 @@ button {
     font-weight: bold;
     padding: .25em .60em;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #2468ac;
+    text-shadow: 0px 1px 0px  #04AA6D;
 }
 
 .btn-base:hover {
-    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    background-color: #378de5;
+    background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
+    background-color:  #04AA6D;
 }
 
 .btn-base:active {
@@ -273,11 +271,11 @@ footer {
     }
 
     .btn-base {
-        box-shadow: 3px 4px 0px 0px #0a2f52;
-        background: linear-gradient(to bottom, #33506d 5%, #2468ac 100%);
-        background-color: #33506d;
+        box-shadow: 3px 4px 0px 0px#272b54;
+        background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+        background-color: #04AA6D;
         border-radius: 5px;
-        border: 1px solid #33506d;
+        border: 1px solid#f6f7f2;
         display: inline-block;
         cursor: pointer;
         color: #f6f7f2;
@@ -286,17 +284,37 @@ footer {
         font-weight: bold;
         padding: .4em .90em;
         text-decoration: none;
-        text-shadow: 0px 1px 0px #2468ac;
+        text-shadow: 0px 1px 0px #04AA6D;
+
+    }
+    .btn-base:hover {
+        background: linear-gradient(to bottom, #06c982 5%,#449b47 100%);
+        background-color:  #04AA6D;
+    }
+    
+    .btn-base:active {
+        position: relative;
+        top: 1px;
     }
 /* Rules and Begain game button*/
     .begainbtn {
         background-color: #04AA6D;
-        color: white;
-        padding: 1.5vw;
-        font-size: 1.5yw;
+        color: #f6f7f2;
         border: none;
         flex-direction: row-reverse;
         margin-top: 1vw;
+        box-shadow: 3px 4px 0px 0px#272b54;
+        background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+        border-radius: 5px;
+        border: 1px solid#f6f7f2;
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: .4em .90em;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #04AA6D;
     }
     .rulesbtn {
     background-color: #04AA6D;
