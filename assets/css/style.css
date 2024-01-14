@@ -68,14 +68,12 @@ dialog {
     inset-inline-end: 0px;
     width: fit-content;
     height: fit-content;
-    background-color: canvas;
-    color: canvastext;
     margin: auto;
     border-width: initial;
     border-style: solid;
     border-color: initial;
     border-image: initial;
-    padding: 1em;
+    padding: 3em;
 }
 
 /* Memory game styles */
@@ -110,31 +108,50 @@ dialog {
     font-family: "Roboto Mono", sans-serif;
     font-size: 1em;
     font-weight: bold;
-    padding: .4em .90em;
+    padding: .1em .90em;
     text-decoration: none;
     text-shadow: 0px 1px 0px #04AA6D;
     flex-direction: row-reverse;
     margin-top: 1vw;
-}
 
+}
+.beginbtn:hover {
+    background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
+    background-color:  #04AA6D;
+}
 .begin-game {
     position: relative;
     display: inline-block;
     
 }
-.begin-game:hover .beginbtn {
+.begin-game .beginbtn:hover{
     background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
     background-color:  #04AA6D;
 }
-.rulesbtn {
-    font-family: "Roboto Mono", sans-serif;
+
+.rulebtn {
     background-color: #04AA6D;
-    color: white;
-    padding: 1vw;
-    font-size: 1yw;
-    border: none;
-    margin-left: 1vw;
+    color: #f6f7f2;
+    flex-direction: row-reverse;
+    box-shadow: 3px 4px 0px 0px#272b54;
+    background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+    border-radius: 5px;
+    border: 1px solid#f6f7f2;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .1em .90em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #04AA6D;
+    flex-direction: row-reverse;
     margin-top: 1vw;
+    margin-left: 1vw;
+}
+.rulebtn:hover {
+    background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
+    background-color:  #04AA6D;
 }
 
 .rules {
@@ -297,7 +314,7 @@ footer {
         top: 1px;
     }
 /* Rules and Begain game button*/
-    .begainbtn {
+    .beginbtn {
         background-color: #04AA6D;
         color: #f6f7f2;
         border: none;
@@ -316,14 +333,26 @@ footer {
         text-decoration: none;
         text-shadow: 0px 1px 0px #04AA6D;
     }
-    .rulesbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 1.5vw;
-    font-size: 1.6yw;
-    border: none;
-    margin-left: 1vw;
-    margin-top: 1vw;
+    .rulebtn {
+        background-color: #04AA6D;
+        color: #f6f7f2;
+        flex-direction: row-reverse;
+        box-shadow: 3px 4px 0px 0px#272b54;
+        background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+        border-radius: 5px;
+        border: 1px solid#f6f7f2;
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: .4em .90em;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #04AA6D;
+        flex-direction: row-reverse;
+        margin-top: 1vw;
+        margin-left: 1vw;
+    
 }
 
 }
