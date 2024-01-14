@@ -185,6 +185,7 @@ function turnCard() {
     cardsPicked.push(cardImages[cardId].name);
     cardsPickedId.push(cardId);
     this.src = cardImages[cardId].img;
+    this.alt = cardImages[cardId].name;
     // two cards clicked
     if (cardsPicked.length === 2) {
         let memoryCards = document.querySelectorAll('img');
