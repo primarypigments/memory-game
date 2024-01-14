@@ -240,16 +240,18 @@ const increaseTimer = () => {
     timePassed++;
     // https://stackoverflow.com/questions/41896116/javascript-math-floor-time-calculcation
     // Used for Time calculations Minutes ans Seconds
-    const numberMinutes = Math.floor(timePassed / 60);
-    const numberSeconds = timePassed % 60;
+    let numberMinutes = Math.floor(timePassed / 60);
+    let numberSeconds = timePassed % 60;
     //inner text https://www.w3schools.com/jsref/prop_node_innertext.asp#:~:text=The%20innerText%20property%20returns%3A,hidden%20text%2C%20but%20without%20tags.
     minutes.innerText = area(numberMinutes);
     seconds.innerText = area(numberSeconds);
 };
 
 // Ability to start the  timer
+
 startBtn.addEventListener('click', startTimer = () => {
-    start();
+    //Bug fix after pressing stop button cards were still clikcable
+    start(board.classList.remove("disable"));
 });
 // End of start timer
 
@@ -259,13 +261,14 @@ startBtn.addEventListener('click', startTimer = () => {
 const stop = () => {
     whileRunning = false;
     clearInterval(amoutOftime);
+    //Bug fix after pressing stop button cards were still clikcable
     document.querySelector("#clicks").disabled = false;
 };
 const stopBtn = document.querySelector('[data-action="stop"]');
-
 stopBtn.addEventListener('click', stopTimer = () => {
-    stop();
+    stop(board.classList.add("disable"));
 });
+
 // End of stop Btn code
 
 // Reset game button
