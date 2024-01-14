@@ -164,16 +164,20 @@ function checkForMatch() {
     cardsPicked = [];
     cardsPickedId = [];
     if (cardsMatch.length === cardImages.length / 2) {
+
         // Dialog Code
+        
 
         { clearInterval(amoutOftime)
         }
-        dataScreen.showModal(document.getElementById("total-time").innerText = timePassed)
-
+        // Code here is to add the time it took to complete the game to the Dialog.
+        let numberMinutes = Math.floor(timePassed / 60);
+        let numberSeconds = timePassed % 60;
+        var timeRan = (area(numberMinutes) +":"+ area(numberSeconds))
+        dataScreen.showModal(document.getElementById("total-time").innerText = timeRan)
+       
         closeBtn.addEventListener("click", function () { clearInterval(amoutOftime)
-            location.reload(); () => {
-
-                dataScreen.close()
+            location.reload(); () => {dataScreen.close()
             }
         });
         // End Dialog Code
