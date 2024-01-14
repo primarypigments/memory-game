@@ -108,7 +108,7 @@ cardImages.sort(() => Math.random() - 0.5);
 let board = document.querySelector('.board');
 // Dialog https://www.youtube.com/watch?v=ywtkJkxJsdg
 const closeBtn = document.querySelector("[data-close-complete]");
-const dataScreen = document.querySelector("[data-screen]")
+const dataScreen = document.querySelector("[data-screen]");
 // End Dialog 
 let cardsPicked = [];
 let cardsPickedId = [];
@@ -120,8 +120,8 @@ function createBoard() {
         const memoryCards = document.createElement('img');
         memoryCards.setAttribute('src', 'assets/images/blank.jpg');
         memoryCards.setAttribute('data-id', i);
-// Move the event listener to carEventlistener to prevent the user to be able to click the cards before pushing the start bitton,
-        memoryCards.classList.add("card")
+        // Move the event listener to carEventlistener to prevent the user to be able to click the cards before pushing the start bitton,
+        memoryCards.classList.add("card");
         // memoryCards.addEventListener('click', turnCard);
         board.appendChild(memoryCards);
     }
@@ -130,20 +130,20 @@ function createBoard() {
 function cardEventListener() {
     let cards = document.querySelectorAll('.card');
     for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener('click', turnCard)
+        cards[i].addEventListener('click', turnCard);
     }
 }
 
 //Build for checking for matches
 function checkForMatch() {
     const memoryCards = document.querySelectorAll('img');
-    const cardOneId = cardsPickedId[0];
-    const cardTwoId = cardsPickedId[1];
+    let cardOneId = cardsPickedId[0];
+    let cardTwoId = cardsPickedId[1];
     // Code here is pervent when the same card is clicked twice by diableing the clicked card.
 
     if (cardOneId == cardTwoId) {
-        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg')
-        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg')
+        memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
+        memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg');
         memoryCards.forEach(card => {
             card.classList.remove("disable");
         });
@@ -151,10 +151,13 @@ function checkForMatch() {
     // end of disabling code
     else if (cardsPicked[0] === cardsPicked[1]) {
 
+
         memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
+        memoryCards[cardOneId].classList.add("disable");
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
-        memoryCards[cardOneId].removeEventListener('onclick', turnCard);
-        memoryCards[cardTwoId].removeEventListener('onclick', turnCard);
+        memoryCards[cardTwoId].classList.add("disable");
+        memoryCards[cardOneId].removeEventListener('click', turnCard);
+        memoryCards[cardTwoId].removeEventListener('click', turnCard);
         cardsMatch.push(cardsPicked);
     } else {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
@@ -166,19 +169,24 @@ function checkForMatch() {
     if (cardsMatch.length === cardImages.length / 2) {
 
         // Dialog Code
-        
+        // Help Joohn
 
-        { clearInterval(amoutOftime)
+        {
+            clearInterval(amoutOftime);
         }
-        // Code here is to add the time it took to complete the game to the Dialog.
         let numberMinutes = Math.floor(timePassed / 60);
         let numberSeconds = timePassed % 60;
-        var timeRan = (area(numberMinutes) +":"+ area(numberSeconds))
-        dataScreen.showModal(document.getElementById("total-time").innerText = timeRan)
-       
-        closeBtn.addEventListener("click", function () { clearInterval(amoutOftime)
-            location.reload(); () => {dataScreen.close()
-            }
+        var timeRan = (area(numberMinutes) + ":" + area(numberSeconds));
+        dataScreen.showModal(document.getElementById("total-time").innerText = timeRan);
+
+
+        closeBtn.addEventListener("click", function () {
+            clearInterval(amoutOftime);
+            location.reload(); () => {
+
+
+                dataScreen.close();
+            };
         });
         // End Dialog Code
     }
@@ -193,7 +201,7 @@ function turnCard() {
     // two cards clicked
     if (cardsPicked.length === 2) {
         let memoryCards = document.querySelectorAll('img');
-         // loop through images and disable them (to avoid more than 2 being clicked at a time)
+        // loop through images and disable them (to avoid more than 2 being clicked at a time)
         memoryCards.forEach(card => {
             card.classList.add("disable");
         });
@@ -218,11 +226,13 @@ let amoutOftime;
 // Timer starts a 0 seconds
 let timePassed = 0;
 // Start BTN Code to start timer.
-const startBtn = document.querySelector('[data-action="start"]');
+let startBtn = document.querySelector('[data-action="start"]');
 
 // Relays the time to the Timer ´, so that the time will chnage on the timer
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
+
+
 
 
 // starts the timer and stop the setinterval being called multiple times
@@ -232,7 +242,7 @@ const start = () => {
     amoutOftime = setInterval(increaseTimer, 1000);
     document.querySelector("#clicks").disabled = true;
     //Calling the fucktion so the cards are able to be fliped- 
-    cardEventListener()
+    cardEventListener();
 };
 
 // Bug fix  (timer not diplaying correctly. Changed > to <)
@@ -266,11 +276,11 @@ startBtn.addEventListener('click', startTimer = () => {
 const stop = () => {
     whileRunning = false;
     clearInterval(amoutOftime);
-    //Bug fix after pressing stop button cards were still clikcable
     document.querySelector("#clicks").disabled = false;
 };
 const stopBtn = document.querySelector('[data-action="stop"]');
 stopBtn.addEventListener('click', stopTimer = () => {
+    //Bug fix after pressing stop button cards were still clikcable
     stop(board.classList.add("disable"));
 });
 
