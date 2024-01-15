@@ -177,7 +177,7 @@ const increaseTimer = () => {
 };
 
 // Ability to start the  timer
-startBtn.addEventListener('click',() => {
+startBtn.addEventListener('click', () => {
     //Bug fix after pressing stop button cards were still clikcable
     start(board.classList.remove("disable"));
 });
