@@ -4,7 +4,7 @@
 
 // After i changed the image sizes, the image size is not correct..
 // Fix was to make the images more responive in CSS.
-
+// How to target the page URL parameters https://stackoverflow.com/questions/979975/get-the-values-from-the-get-parameters-javascript/979995#979995
 let cardImages = [];
 let url = new URL(window.location);
 let gameCategory = url.searchParams.get("game");
