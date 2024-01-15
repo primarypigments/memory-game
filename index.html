@@ -13,70 +13,68 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--Style Sheet-->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body id="start">
+    <header>
+        <h1 id="logo"></h1>
+    </header>
+    <main>
+        <div class="begin-game">
+            <dialog>
+                <button class="beginbtn" autofocus>Close</button>
+                <p class="rules-content">The odject to Crazy Memory is to match all 24 cards by clicking on them.
+                    To begin the game click on the begain game button and once game is loaded
+                    click on the start button on the timer to start and unlock the cards.</p>
+            </dialog>
+            <button class="rulebtn">How To Play</button>
+        </div>
+        <div class="begin-game">
+            <a href="gamescreen.html?game=foods" id="food" class="category-btn"><button
+                    class="beginbtn">Foods</button></a>
+            <a href="gamescreen.html?game=dogs" id="dogs" class="category-btn"><button
+                    class="beginbtn">Dogs</button></a>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <ul id="online-community">
+            <li>
+                <a class="social" href="http://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our community on facebook (opens in a new tab)">
+                    <i class="fa-brands fa-square-facebook">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="social" href="http://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our community on Twitter (opens in a new tab)">
+                    <i class="fa-brands fa-square-x-twitter">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="social" href="http://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our commumity on Instagram (opens in a new tab)">
+                    <i class="fa-brands fa-square-instagram">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="social" href="http://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our community on Youtube (opens in a new tab)">
+                    <i class="fa-brands fa-youtube">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
-  <header>
-   <h1 id="logo"></h1>
-</header>
-<main >
-    
-    <div class="begin-game">
-       
-    <dialog>
-        <button class="beginbtn" autofocus>Close</button>
-        <p class="rules-content">The odject to Crazy Memory is to match all 24 cards by clicking on them.
-            To begin the game click on the begain game button and once game is loaded
-             click on the start button on the timer to start and unlock the cards.</p>
-      </dialog>
-      <button class="rulebtn">How To Play</button>
-    </div>
-   
-      <div class="begin-game">
-        <a href="gamescreen.html?game=foods" id="food" class="category-btn"><button class="beginbtn">Foods</button></a> 
-        <a href="gamescreen.html?game=dogs" id="dogs" class="category-btn"><button class="beginbtn">Dogs</button></a> 
-</div>
-
-       
-</main>
-   <!--Footer-->
-   <footer>
-    <ul id="online-community">
-        <li>
-            <a class="social" href="http://www.facebook.com/" target="_blank" rel="noopener"
-                aria-label="Visit our community on facebook (opens in a new tab)">
-                <i class="fa-brands fa-square-facebook">
-                </i>
-            </a>
-        </li>
-        <li>
-            <a class="social" href="http://www.twitter.com/" target="_blank" rel="noopener"
-                aria-label="Visit our community on Twitter (opens in a new tab)">
-                <i class="fa-brands fa-square-x-twitter">
-                </i>
-            </a>
-        </li>
-        <li>
-            <a class="social" href="http://www.instagram.com/" target="_blank" rel="noopener"
-                aria-label="Visit our commumity on Instagram (opens in a new tab)">
-                <i class="fa-brands fa-square-instagram">
-                </i>
-            </a>
-        </li>
-        <li>
-            <a class="social" href="http://www.youtube.com/" target="_blank" rel="noopener"
-                aria-label="Visit our community on Youtube (opens in a new tab)">
-                <i class="fa-brands fa-youtube">
-                </i>
-            </a>
-        </li>
-    </ul>
-</footer>
-
-<!--Link for font awesome ie social media-->
-<script src="https://kit.fontawesome.com/50c170cc26.js" crossorigin="anonymous"></script>
-<script src="assets/js/dialog.js"></script>
+    <!--Link for font awesome ie social media-->
+    <script src="https://kit.fontawesome.com/50c170cc26.js" crossorigin="anonymous"></script>
+    <script src="assets/js/dialog.js"></script>
 
 </body>
+
 </html>
