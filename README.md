@@ -9,45 +9,45 @@ https://ui.dev/amiresponsive?url=https://primarypigments.github.io/memory-game
 
 ### UX
 
-At this stage of the game i was more concerened about funtionality and smooth gameplay than the over all bells and wishles that design can bring. Even though at this stage the design is simple, it is just enough to attract a large array of users to come and play.
+At this stage of the game I was more concerned about functionality and smooth gameplay than the overall bells and whistles that design can bring. Even though at this stage the design is simple, it is just enough to attract a large array of users to come and play.
 
 
 ### Colour Scheme
 
-I chose colors that would match the hero image due to its apeal of having fun. So the colors i chose are to luare the user to continue and press the begin game button and play.
+I chose colors that would match the hero image due to its appeal of having fun. So the colors I chose are to lour the user to continue and press the begin game button and play.
 
-
+- Site Colors
 - `#f6f7f2` used for primary text.
 - `#035349a1` used for Header and footer background.
 - `#272b54` used for shadows.
 - `#050505` used for background.
 - linear-gradient used for Dialog backdrop.
-  -´#CE17A3´,
-  -´#5F2E90´,
-  -´#196BF0´,
-  -´#35B135´
-- Button Color Scheme
-- #04AA6D  
-- #06e392 
-- #02482e used for shadow.
-- #04AA6D used for border.
-- 449b47 used for hover background.
+- ´#CE17A3´
+- ´#5F2E90´
+- ´#196BF0´
+- ´#35B135´
+- Button Colors
+- ´#04AA6D´  
+- ´#06e392´ 
+- ´#02482e´ used for shadow.
+- ´#04AA6D´ used for border.
+- ´#449b47´ used for hover background.
 
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
+When you add a color to the palette, the URL is dynamically updated, making it easier for you to return back to your color palette later if needed.
 
 Example:
 https://coolors.co/04aa6d-06e392-449b47-f6f7f2
 https://coolors.co/ce17a3-5f2e90-196bf0-ab81cd
 https://coolors.co/f6f7f2-035349-272b54-050505
 
-I used [coolors.co](https://coolors.co) to generate my colour palette.
+I used [coolors.co](https://coolors.co) to generate my color palette.
 
 ![screenshot](documentation/button-colours.png)
 ![screenshot](documentation/dialog-backdrop-colors.png)
 ![screenshot](documentation/site-colors.png)
 ### Typography
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
 
 Icons
 
@@ -78,19 +78,19 @@ Example:
 
 ![screenshot](documentation/features/feature-1-hero.png)
 
-- **Social media acessablitiy**
+- **Social media accessibility**
 
-    - This gives the user the ability to share our game and share their experince. 
+    - This gives the user the ability to share our game and share their experience. 
 
 ![screenshot](documentation/features/feature-2-social.png)
 
 - **Timer**
 
-    - The time give the user the ability to start and unlock the card by pushing the start button. This also stop the user ffrom cheating. By pushing the stop button gives the user the chance to stop the game and take a break. The reset button will reset the game eteirly.
+    - The time give the user the ability to start and unlock the card by pushing the start button. This also stop the user from cheating. By pushing the stop button gives the user the chance to stop the game and take a break. The reset button will reset the game entirely.
 
 ![screenshot](documentation/features/feature-3-timer-start-stop-reset.png)
 
- **Return to home Sreen**
+ **Return to home Screen**
 
     - This gives the user access to return to the home screen to head over the rules again.
 ![screenshot](documentation/features/feature-4-return.png)
@@ -101,13 +101,25 @@ Example:
 
 ![screenshot](documentation/features/feature-5-flip2.png)
 
+**2 card options Dogs and Foods**
+
+    - This keeps the user on the site longer and gives a more pleasurable game play experience.
+
+![screenshot](documentation/features/feature-6-card-options.png)
+
+**Locked cards**
+
+    - This keeps the user from cheating the time on the timer.
+
+![screenshot](documentation/features/feature-7-locked.png)
+
 ### Future Features
 
 - Animated Card flip  
     -Give the game an overall better feel.
 - Ability to Choose different card backs #2
     - Any additional notes about this feature.
-- Dificulty ranges 
+- Difficulty ranges 
     - Easy 16 cards, Medium 24 cards, Hard 40 Cards Expert 100 Cards.
 
 ## Tools & Technologies Used
@@ -117,7 +129,7 @@ Example:
 - [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [JavaScript](https://stackoverflow.com) used for a scource to problem solve.
+- [JavaScript](https://stackoverflow.com) used as a source to problem solve.
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
@@ -190,7 +202,8 @@ Use this space to discuss any differences between the local version you've devel
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | Entire Site | Responsive HTML/CSS/JS Buttons |
 | [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | End game | Interactive pop-up (modal) |
 | [Mmdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) | entire site | how to code dialogs |
-| [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) | entire site | How to shuffel an array |
+| [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) | entire site | How to shuffle an array |
+| [Stack Overflow](https://stackoverflow.com/questions/979975/get-the-values-from-the-get-parameters-javascript/979995#979995) | entire site |  How to target the page URL parameters |
 | [YouTube]( https://www.youtube.com/watch?v=ec8vSKJuZTk) | entire site | Memory Card game code base |
 | [YouTube](https://www.youtube.com/watch?v=ywtkJkxJsdg) | Memory Game | How to use a dialog |
 | [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
@@ -207,12 +220,12 @@ Use this space to discuss any differences between the local version you've devel
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Bing Image Creator](https://www.bing.com/images/create?FORM=GENILP) | Entire Site | image | Created all images for site (can not provide links to evey image used due  to images are linked to my personal account) |
+| [Bing Image Creator](https://www.bing.com/images/create?FORM=GENILP) | Entire Site | image | Created all images for site (can not provide links to every image used due  to images are linked to my personal account) |
 
 
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.Tim Really gose the extra mile to get his studens to feel confident about their work. I appricate getting to know him.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.Tim Really goes the extra mile to get his students to feel confident about their work. I appreciate getting to know him.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner Coleen Sciacca, and my children, for believing in me, and allowing me to make this transition into software development.
