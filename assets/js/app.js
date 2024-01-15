@@ -4,105 +4,18 @@
 
 // After i changed the image sizes, the image size is not correct..
 // Fix was to make the images more responive in CSS.
-const cardImages = [
-    {
-        name: 'fries',
-        img: 'assets/images/fries.jpg'
-    },
-    {
-        name: 'hamburger',
-        img: 'assets/images/hamburger.jpg'
-    },
-    {
-        name: 'malt',
-        img: 'assets/images/malt.jpg'
-    },
-    {
-        name: 'pizza',
-        img: 'assets/images/pizza.jpg'
-    },
-    {
-        name: 'rootbeer',
-        img: 'assets/images/rootbeer.jpg'
-    },
-    {
-        name: 'popcorn',
-        img: 'assets/images/popcorn.jpg'
-    },
-    {
-        name: 'palak',
-        img: 'assets/images/palak.jpg'
-    },
-    {
-        name: 'jellybean',
-        img: 'assets/images/jellybeans.jpg'
-    },
-    {
-        name: 'grilled cheese',
-        img: 'assets/images/grilledcheese.jpg'
-    },
-    {
-        name: 'fish and chips',
-        img: 'assets/images/fishandchips.jpg'
-    },
-    {
-        name: 'cafe latte',
-        img: 'assets/images/cafelatte.jpg'
-    },
-    {
-        name: 'beer',
-        img: 'assets/images/beer.jpg'
-    },
-    {
-        name: 'fries',
-        img: 'assets/images/fries.jpg'
-    },
-    {
-        name: 'hamburger',
-        img: 'assets/images/hamburger.jpg'
-    },
-    {
-        name: 'malt',
-        img: 'assets/images/malt.jpg'
-    },
-    {
-        name: 'pizza',
-        img: 'assets/images/pizza.jpg'
-    },
-    {
-        name: 'rootbeer',
-        img: 'assets/images/rootbeer.jpg'
-    },
-    {
-        name: 'popcorn',
-        img: 'assets/images/popcorn.jpg'
-    },
-    {
-        name: 'palak',
-        img: 'assets/images/palak.jpg'
-    },
-    {
-        name: 'jellybean',
-        img: 'assets/images/jellybeans.jpg'
-    },
-    {
-        name: 'grilled cheese',
-        img: 'assets/images/grilledcheese.jpg'
-    },
-    {
-        name: 'fish and chips',
-        img: 'assets/images/fishandchips.jpg'
-    },
-    {
-        name: 'cafe latte',
-        img: 'assets/images/cafelatte.jpg'
-    },
-    {
-        name: 'beer',
-        img: 'assets/images/beer.jpg'
-    },
-];
-// Shuffle code https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+let cardImages = [];
+let url = new URL(window.location);
+let gameCategory = url.searchParams.get("game");
+if (gameCategory == "foods") {
+    cardImages = foods;
+} else if (gameCategory == "dogs") {
+    cardImages = dogs;
+}
+
+
+//shuffle code https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 cardImages.sort(() => Math.random() - 0.5);
 // Memory game base code https://www.youtube.com/watch?v=ec8vSKJuZTk
 let board = document.querySelector('.board');
@@ -116,6 +29,7 @@ let cardsMatch = [];
 
 //creating board for game
 function createBoard() {
+
     for (let i = 0; i < cardImages.length; i++) {
         const memoryCards = document.createElement('img');
         memoryCards.setAttribute('src', 'assets/images/blank.jpg');
@@ -218,7 +132,7 @@ function turnCard() {
 
 
 
-createBoard()
+createBoard();
 
 // TIMER
 
