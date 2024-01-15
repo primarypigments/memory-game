@@ -9,7 +9,6 @@
     font-family: "Roboto Mono", sans-serif;
 }
 
-
 /*Gerneral Styles*/
 body {
     min-height: 100vh;
@@ -31,7 +30,7 @@ body {
 
 /*Header*/
 header {
-    background-color: #035349a1; 
+    background-color: #035349a1;
     color: #f6f7f2;
     font-size: 20px;
     padding: 0 1rem;
@@ -84,7 +83,6 @@ dialog {
     justify-content: center;
     margin-right: 15vw;
     margin-left: 15vw;
-
 }
 
 .board img {
@@ -113,20 +111,22 @@ dialog {
     text-shadow: 0px 1px 0px #04AA6D;
     flex-direction: row-reverse;
     margin-top: 1vw;
-
 }
+
 .beginbtn:hover {
     background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
-    background-color:  #04AA6D;
+    background-color: #04AA6D;
 }
+
 .begin-game {
     position: relative;
     display: inline-block;
-    
+
 }
-.begin-game .beginbtn:hover{
+
+.begin-game .beginbtn:hover {
     background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
-    background-color:  #04AA6D;
+    background-color: #04AA6D;
 }
 
 .rulebtn {
@@ -149,9 +149,10 @@ dialog {
     margin-top: 1vw;
     margin-left: 1vw;
 }
+
 .rulebtn:hover {
     background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
-    background-color:  #04AA6D;
+    background-color: #04AA6D;
 }
 
 .rules {
@@ -161,21 +162,18 @@ dialog {
 
 .rules-content {
     font-family: "Roboto Mono", sans-serif;
-    min-width: 30vw;   
-    
+    min-width: 30vw;
 }
 
 /* index dialog for rules of crazy memory*/
 ::backdrop {
-    background-image: linear-gradient(
-      45deg,
-      #CE17A3,
-      #5F2E90,
-      #196BF0,
-      #35B135
-    );
+    background-image: linear-gradient(45deg,
+            #CE17A3,
+            #5F2E90,
+            #196BF0,
+            #35B135);
     opacity: 0.75;
-  }
+}
 
 /* TIMER */
 
@@ -187,8 +185,8 @@ dialog {
 
 .btn-base {
     box-shadow: 3px 4px 0px 0px #272b54;
-    background: linear-gradient(to bottom, #04AA6D 5%,  #06e392 100%);
-    background-color:  #f6f7f2;
+    background: linear-gradient(to bottom, #04AA6D 5%, #06e392 100%);
+    background-color: #f6f7f2;
     border-radius: 5px;
     border: 1px solid #04AA6D;
     display: inline-block;
@@ -199,18 +197,19 @@ dialog {
     font-weight: bold;
     padding: .25em .60em;
     text-decoration: none;
-    text-shadow: 0px 1px 0px  #04AA6D;
+    text-shadow: 0px 1px 0px #04AA6D;
 }
 
 .btn-base:hover {
     background: linear-gradient(to bottom, #04AA6D 5%, #449b47 100%);
-    background-color:  #04AA6D;
+    background-color: #04AA6D;
 }
 
 .btn-base:active {
     position: relative;
     top: 1px;
 }
+
 .time-buttons {
     margin: 0.5em auto;
 }
@@ -302,18 +301,19 @@ footer {
         padding: .4em .90em;
         text-decoration: none;
         text-shadow: 0px 1px 0px #04AA6D;
+    }
 
-    }
     .btn-base:hover {
-        background: linear-gradient(to bottom, #06c982 5%,#449b47 100%);
-        background-color:  #04AA6D;
+        background: linear-gradient(to bottom, #06c982 5%, #449b47 100%);
+        background-color: #04AA6D;
     }
-    
+
     .btn-base:active {
         position: relative;
         top: 1px;
     }
-/* Rules and Begain game button*/
+
+    /* Rules and Begain game button*/
     .beginbtn {
         background-color: #04AA6D;
         color: #f6f7f2;
@@ -333,6 +333,7 @@ footer {
         text-decoration: none;
         text-shadow: 0px 1px 0px #04AA6D;
     }
+
     .rulebtn {
         background-color: #04AA6D;
         color: #f6f7f2;
@@ -352,9 +353,7 @@ footer {
         flex-direction: row-reverse;
         margin-top: 1vw;
         margin-left: 1vw;
-    
-}
-
+    }
 }
 
 /*  disable images (to avoid more than 2 being clicked at a time)*/
