@@ -218,7 +218,7 @@ function turnCard() {
 
 
 
-createBoard();
+createBoard()
 
 // TIMER
 
@@ -231,13 +231,13 @@ let startBtn = document.querySelector('[data-action="start"]');
 // Relays the time to the Timer ´, so that the time will chnage on the timer
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
-
+let whileRunning = ("");
 
 
 
 // starts the timer and stop the setinterval being called multiple times
 const start = () => {
-    whileRunning = true;
+    whileRunning = (true);
     // setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
     amoutOftime = setInterval(increaseTimer, 1000);
     document.querySelector("#clicks").disabled = true;
@@ -263,8 +263,7 @@ const increaseTimer = () => {
 };
 
 // Ability to start the  timer
-
-startBtn.addEventListener('click', startTimer = () => {
+startBtn.addEventListener('click',() => {
     //Bug fix after pressing stop button cards were still clikcable
     start(board.classList.remove("disable"));
 });
@@ -274,12 +273,12 @@ startBtn.addEventListener('click', startTimer = () => {
 
 // clearinterval https://www.w3schools.com/jsref/met_win_clearinterval.asp
 const stop = () => {
-    whileRunning = false;
+    whileRunning = (false);
     clearInterval(amoutOftime);
     document.querySelector("#clicks").disabled = false;
 };
 const stopBtn = document.querySelector('[data-action="stop"]');
-stopBtn.addEventListener('click', stopTimer = () => {
+stopBtn.addEventListener('click', () => {
     //Bug fix after pressing stop button cards were still clikcable
     stop(board.classList.add("disable"));
 });
