@@ -49,7 +49,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Home | Gamescreen | Notes |
 | --- | --- | --- | --- |
-| iPad Pro | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | ![screenshot](/workspace/memory-game/documentation/responsive/responsive-gamescreen-ipad-pro.png) | Works as expected |
+| iPad Pro | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | ![screenshot](documentation/responsive/responsive-gamescreen-ipad-pro.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsive/responsive-home-desktop.png) | ![screenshot](documentation/responsive/responsive-gamescreen-desktop.png) | Works as expected |
 | iPhone 15 Pro Max | ![screenshot](documentation/responsive/responsive-home-iphone-15-pro-max.png) | ![screenshot](documentation/responsive/responsive-gamescreen-iphone-15-pro-max.png) | Works as expected |
 | iPhone SE (DevTools) | ![screenshot](documentation/responsive/responsive-home-iphone-se.png) | ![screenshot](documentation/responsive/responsive-gamescreen-iphone-se.png) | Works as expected |
