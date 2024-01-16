@@ -66,35 +66,35 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 - JS Dialog missprinting correct time format
 
-    ![screenshot](documentation/bugs/dialog-bug-missprint-time-code.png)
+    ![screenshot](documentation/bugs/dialog-bug-missprint-time-working-code.png)
 
     - To fix this, I concatenated the string on the line before I show the modal.
     - I used use the '+' operator for string concatenation instead of the commas. Then I assign it to a variable, and then set the innerText on the element to that variable.
 
 - JS After making a match, the matched card are not disabled.
 
-    ![screenshot](documentation/bug02.png)
+    ![screenshot](documentation/bugs/card-match-not-disabled-after-match-code.png)
 
     - To fix this, I used onclick in my initial code, then i learned that onclick is not reliable in JS and can cause errors or unwanted behavior, so i switched "onclick" to "click" and the game started to work properly.
 
 - JS After pressing stop button cards are not disabled
 
-    ![screenshot](documentation/bug03.png)
+    ![screenshot](documentation/bugs/card-not-disabled-stop-code-2-solution.png)
 
     - To fix this, I first tried to create an if statement and disable the cards once the start button was pressed. I found this to cause a series of problems that I didn't find a solution to. Then i tried to simplify this by disabling the board. I called the board class
  in the “eventlistener” for the stop button and added a disabled class to the board and then in “eventlistener” for the start button I removed disable.
 
 - JS More than 2 cards can be clicked
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bugs/more-than-2-cards-clicked-code.png)
 
     - To fix this, I created a loop through images and disabled them (to avoid more than 2 being clicked at a time). After this I added a delay to reactivate the cards.
 
-- Python `E501 line too long` (93 > 79 characters)
+- JS Card Matched are clickable after clicking the stop button and then clicking the start button.
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bugs/Cards-reset-after-stopbuton.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I added a classlist "matched" to the cards are were matched. I added a if statement to call for the cards that are matches then only remove "disabled" class if not already "matched".
 
 ## Unfixed Bugs
 
