@@ -33,6 +33,7 @@ function createBoard() {
     for (let i = 0; i < cardImages.length; i++) {
         const memoryCards = document.createElement('img');
         memoryCards.setAttribute('src', 'assets/images/blank.jpg');
+        memoryCards.setAttribute('alt', 'random image');
         memoryCards.setAttribute('data-id', i);
         // Move the event listener to carEventlistener to prevent the user to be able to click the cards before pushing the start bitton,
         memoryCards.classList.add("card");
