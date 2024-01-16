@@ -1,9 +1,10 @@
 /* jshint esversion: 11 */
 
-// Array for card images
+// Array for card images foods.js and dogs.js
 
-// After i changed the image sizes, the image size is not correct..
+// After I changed the image sizes, the image sizes are not correct..
 // Fix was to make the images more responive in CSS.
+
 // How to target the page URL parameters https://stackoverflow.com/questions/979975/get-the-values-from-the-get-parameters-javascript/979995#979995
 let cardImages = [];
 let url = new URL(window.location);
@@ -55,7 +56,7 @@ function checkForMatch() {
     let cardOneId = cardsPickedId[0];
     let cardTwoId = cardsPickedId[1];
 
-    // Code here is pervent when the same card is clicked twice by diableing the clicked card.
+    // // disable a user from clicking the same exact card twice
     if (cardOneId == cardTwoId) {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg');
