@@ -54,8 +54,8 @@ function checkForMatch() {
     const memoryCards = document.querySelectorAll('img');
     let cardOneId = cardsPickedId[0];
     let cardTwoId = cardsPickedId[1];
-    // Code here is pervent when the same card is clicked twice by diableing the clicked card.
 
+    // Code here is pervent when the same card is clicked twice by diableing the clicked card.
     if (cardOneId == cardTwoId) {
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg');
@@ -68,16 +68,16 @@ function checkForMatch() {
 
 
         memoryCards[cardOneId].setAttribute('src', 'assets/images/white.jpg');
-        memoryCards[cardOneId].classList.add("disable");
+        memoryCards[cardOneId].classList.add("disable", "matched");
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/white.jpg');
-        memoryCards[cardTwoId].classList.add("disable");
+        memoryCards[cardTwoId].classList.add("disable", "matched");
         memoryCards[cardOneId].removeEventListener('click', turnCard);
         memoryCards[cardTwoId].removeEventListener('click', turnCard);
         cardsMatch.push(cardsPicked);
     } else {
+        // no match found!
         memoryCards[cardOneId].setAttribute('src', 'assets/images/blank.jpg');
         memoryCards[cardTwoId].setAttribute('src', 'assets/images/blank.jpg');
-
     }
     cardsPicked = [];
     cardsPickedId = [];
