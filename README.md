@@ -11,7 +11,6 @@ https://ui.dev/amiresponsive?url=https://primarypigments.github.io/memory-game
 
 At this stage of the game I was more concerned about functionality and smooth gameplay than the overall bells and whistles that design can bring. Even though at this stage the design is simple, it is just enough to attract a large array of users to come and play.
 
-
 ### Colour Scheme
 
 I chose colors that would match the hero image due to its appeal of having fun. So the colors I chose are to lour the user to continue and press the begin game button and play.
@@ -45,9 +44,8 @@ I used [coolors.co](https://coolors.co) to generate my color palette.
 ![screenshot](documentation/button-colours.png)
 ![screenshot](documentation/dialog-backdrop-colors.png)
 ![screenshot](documentation/site-colors.png)
+
 ### Typography
-
-
 
 Icons
 
@@ -59,16 +57,48 @@ I've integrated Google Fonts to find a typeface that compliments the website's a
 
 Example:
 
-
-
 - [Rodoto Mono](https://fonts.google.com/specimen/Roboto+Mono) was used for the primary headers and titles.
 
 - [Sans-Serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used as a fallback.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
-## Features
+## Wireframes
 
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+<summary> Click here to see the Mobile Wireframes < / summary >
+
+Home
+  - ![screenshot](documentation/wireframe/smartphone-home.png)
+
+Game Screen
+  - ![screenshot](documentation/wireframe/smartphone-game.png)
+
+### Tablet Wireframes
+
+<summary> Click here to see the Tablet Wireframes < / summary >
+
+Home
+  - ![screenshot](documentation/wireframe/tablet-home.png)
+
+Game Screen
+  - ![screenshot]documentation/wireframe/tablet-game.png)
+
+### Desktop Wireframes
+
+<summary> Click here to see the Desktop Wireframes < / summary >
+
+Home
+  - ![screenshot]documentation/wireframe/desktop-home.png)
+
+Game Screen
+  - ![screenshot](documentation/wireframe/desktop-game.png)
+
+## Features
 
 ### Existing Features
 
@@ -134,6 +164,7 @@ Example:
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Google](https://gitpod.io) used as a learning tool
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -191,9 +222,7 @@ Use this space to discuss any differences between the local version you've devel
 
 ## Credits
 
-
 ### Content
-
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -216,12 +245,10 @@ Use this space to discuss any differences between the local version you've devel
 
 ### Media
 
-
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
 | [Bing Image Creator](https://www.bing.com/images/create?FORM=GENILP) | Entire Site | image | Created all images for site (can not provide links to every image used due  to images are linked to my personal account) |
-
 
 ### Acknowledgements
 
