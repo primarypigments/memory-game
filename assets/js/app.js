@@ -84,23 +84,15 @@ function checkForMatch() {
 
         // Dialog Code
         // Help Joohn
-
-        {
-            clearInterval(amoutOftime);
-        }
+        clearInterval(amoutOftime);
         let numberMinutes = Math.floor(timePassed / 60);
         let numberSeconds = timePassed % 60;
-        var timeRan = (area(numberMinutes) + ":" + area(numberSeconds));
+        let timeRan = (area(numberMinutes) + ":" + area(numberSeconds));
         dataScreen.showModal(document.getElementById("total-time").innerText = timeRan);
-
 
         closeBtn.addEventListener("click", function () {
             clearInterval(amoutOftime);
-            location.reload(); () => {
-
-
-                dataScreen.close();
-            };
+            location.assign("index.html");
         });
         // End Dialog Code
     }
