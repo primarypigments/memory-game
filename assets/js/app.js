@@ -124,7 +124,11 @@ function turnCard() {
             checkForMatch();
             // re-enable the cards to be clickable again
             memoryCards.forEach(card => {
-                card.classList.remove("disable");
+                if (!card.classList.contains("matched")) {
+                    // only remove "disabled" class if not already "matched"
+                    card.classList.remove("disable");
+                    card.alt = "random image";
+                }
             });
         }, 900);
     }
