@@ -141,6 +141,12 @@ Game Screen
   - This keeps the user from cheating the time on the timer.
   - ![screenshot](documentation/features/feature-7-locked.png)
 
+**Accessibility for visually impaired and stop user from cheating**
+
+  - Added an alt to the card images that shows "Random Image" and when the image is clicked the alt shows the alt for the  description of the 
+    image. The card alt returns to "random Image" if not a match.
+  - ![screenshot](documentation/features/feature-7-accessible.png)
+
 ### Future Features
 
 - Animated Card flip  
