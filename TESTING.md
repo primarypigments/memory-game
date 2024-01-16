@@ -8,11 +8,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Findex.html) | ![screenshot](documentation/validation/html-home.png) | Pass: No Errors |
+| Game Screen | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Fgamescreen.html%3Fgame%3Dfoods) | ![screenshot](documentation/validation/html-gamescreen.png) | Pass: No Errors |
 | x | x | x | repeat for all remaining HTML files |
 
 ### CSS
@@ -62,7 +59,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Chrome | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/chrome-gamescreen.png) |  | Works as expected |
 | Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) |  | Works as expected |
 | Edge | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/edge-gamescreen.png) |  | Works as expected |
-| Safari | ![documentation/browsers/safari-home.png) | ![screenshot](documentation/browsers/safari-gamescreen.png) |  | Minor CSS differences |
+| Safari | ![screenshot](documentation/browsers/safari-home.png) | ![screenshot](documentation/browsers/safari-gamescreen.png) |  | Minor CSS differences |
 | Brave | ![screenshot](documentation/browsers/brave-home.png) | ![screenshot](documentation/browsers/brave-gamescreen.png) |  | Works as expected |
 | Opera | ![screenshot](documentation/browsers/opera-home.png) | ![screenshot](documentation/browsers/opera-gamescreen.png) |  | Minor differences |
 | repeat for any other tested browsers | x | x | x | x | x |
@@ -75,7 +72,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | --- | --- | --- | --- | --- | --- |
 | iPad Pro | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsive/responsive-home-desktop.png) | ![screenshot](documentation/responsive/responsive-gamescreen-desktop.png) | Works as expected |
-| iPhone 15 Pro Max | ![screenshot](documentation/responsive/responsive-home-iphone-15-pro-max.png) | ![screenshot]documentation/responsive/responsive-gamescreen-iphone-15-pro-max.png) | ![screenshot](documentation/responsive-iphone-contact.png) | ![screenshot](documentation/responsive-iphone-etc.png) | Works as expected |
+| iPhone 15 Pro Max | ![screenshot](documentation/responsive/responsive-home-iphone-15-pro-max.png) | ![screenshot](documentation/responsive/responsive-gamescreen-iphone-15-pro-max.png) | ![screenshot](documentation/responsive-iphone-contact.png) | ![screenshot](documentation/responsive-iphone-etc.png) | Works as expected |
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Lighthouse Audit
