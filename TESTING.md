@@ -9,25 +9,15 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Findex.html) | ![screenshot](documentation/validation/html-home.png) | Pass: No Errors |
-| Game Screen | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Fgamescreen.html%3Fgame%3Dfoods) | ![screenshot](documentation/validation/html-gamescreen.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
+| Game Screen | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game%2Fgamescreen.html) | ![screenshot](documentation/validation/html-gamescreen.png) | Pass: No Errors |
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game
-
-**IMPORTANT**: Third-Party tools
-
-If you're using extras like Bootstrap, Materialize, Font Awesome, then sometimes the validator
-will attempt to also validate this code, even if it's not part of your own actual code.
-You are not required to validate the external libraries or frameworks!
-
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| styles.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimarypigments.github.io%2Fmemory-game) | ![screenshot](documentation/validation/css-index.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -42,38 +32,26 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ## Browser Compatibility
 
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-Sample browser testing documentation:
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/chrome-gamescreen.png) |  | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) |  | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/firefox-gamescreen.png) |  | Works as expected |
 | Edge | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/edge-gamescreen.png) |  | Works as expected |
 | Safari | ![screenshot](documentation/browsers/safari-home.png) | ![screenshot](documentation/browsers/safari-gamescreen.png) |  | Minor CSS differences |
 | Brave | ![screenshot](documentation/browsers/brave-home.png) | ![screenshot](documentation/browsers/brave-gamescreen.png) |  | Works as expected |
 | Opera | ![screenshot](documentation/browsers/opera-home.png) | ![screenshot](documentation/browsers/opera-gamescreen.png) |  | Minor differences |
-| repeat for any other tested browsers | x | x | x | x | x |
 
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | Gamescreen | Notes |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | iPad Pro | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | ![screenshot](documentation/responsive/responsive-home-ipad-pro.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsive/responsive-home-desktop.png) | ![screenshot](documentation/responsive/responsive-gamescreen-desktop.png) | Works as expected |
-| iPhone 15 Pro Max | ![screenshot](documentation/responsive/responsive-home-iphone-15-pro-max.png) | ![screenshot](documentation/responsive/responsive-gamescreen-iphone-15-pro-max.png) | ![screenshot](documentation/responsive-iphone-contact.png) | ![screenshot](documentation/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested browsers | x | x | x | x | x |
+| iPhone 15 Pro Max | ![screenshot](documentation/responsive/responsive-home-iphone-15-pro-max.png) | ![screenshot](documentation/responsive/responsive-gamescreen-iphone-15-pro-max.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -82,15 +60,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
 | Home | ![screenshot](documentation/validation/lighthouse-index.png) | ![screenshot](documentation/validation/lighthouse-index-desktop.png) | Some minor warnings |
-| Game Screen | ![screenshot](documentation/validation/lighthouse-gamescreen.png) | ![screenshot](/workspace/memory-game/documentation/validation/lighthouse-gamescreen-desktop.png) | Some minor warnings |
+| Game Screen | ![screenshot](documentation/validation/lighthouse-gamescreen.png) | ![screenshot](documentation/validation/lighthouse-gamescreen-desktop.png) | Some minor warnings |
 
 ## Bugs
 
 - JS Dialog missprinting correct time format
 
-    ![screenshot](documentation/bug01.png)
+    ![screenshot](documentation/bugs/dialog-bug-missprint-time-code.png)
 
-    - To fix this, I concatenated the string on the line before I show the modal - I used use the '+' operator for string concatenation instead of the commas. Then I assign it to a variable, and then set the innerText on the element to that variable.
+    - To fix this, I concatenated the string on the line before I show the modal.
+    - I used use the '+' operator for string concatenation instead of the commas. Then I assign it to a variable, and then set the innerText on the element to that variable.
 
 - JS After making a match, the matched card are not disabled.
 
@@ -98,14 +77,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
     - To fix this, I used onclick in my initial code, then i learned that onclick is not reliable in JS and can cause errors or unwanted behavior, so i switched "onclick" to "click" and the game started to work properly.
 
--JS After pressing stop button cards are not disabled
+- JS After pressing stop button cards are not disabled
 
     ![screenshot](documentation/bug03.png)
 
     - To fix this, I first tried to create an if statement and disable the cards once the start button was pressed. I found this to cause a series of problems that I didn't find a solution to. Then i tried to simplify this by disabling the board. I called the board class
  in the “eventlistener” for the stop button and added a disabled class to the board and then in “eventlistener” for the start button I removed disable.
 
--JS More than 2 cards can be clicked
+- JS More than 2 cards can be clicked
+
     ![screenshot](documentation/bug04.png)
 
     - To fix this, I created a loop through images and disabled them (to avoid more than 2 being clicked at a time). After this I added a delay to reactivate the cards.
