@@ -25,7 +25,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/validation/jshint-app.js.png) | 189 Expected an assignment or function call and instead saw an expression.|
+| app.js | ![screenshot](documentation/validation/jshint-app.js.png) | 189 Expected an assignment or function call and instead saw an expression.|
 | dialog.js | ![screenshot](documentation/validation/jshint-dialog.js.png) | Pass: No Errors |
 | foods.js | ![screenshot](documentation/validation/jshint-foods.js.png) | Pass: No Errors |
 | dogs.js | ![screenshot](documentation/validation/jshint-dogs.js.png) | Pass: No Errors |
