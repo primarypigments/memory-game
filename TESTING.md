@@ -1,9 +1,6 @@
 # Testing
 
-
 ## Code Validation
-
-
 
 ### HTML
 
@@ -39,7 +36,6 @@ You are not required to validate the external libraries or frameworks!
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | script.js | ![screenshot](documentation/validation/jshint-app.js.png) | 189 Expected an assignment or function call and instead saw an expression.|
@@ -49,7 +45,6 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ## Browser Compatibility
 
-
 Recommended browsers to consider:
 - [Chrome](https://www.google.com/chrome)
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
@@ -57,7 +52,6 @@ Recommended browsers to consider:
 - [Safari](https://support.apple.com/downloads/safari)
 - [Brave](https://brave.com/download)
 - [Opera](https://www.opera.com/download)
-
 
 Sample browser testing documentation:
 
@@ -75,7 +69,6 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | Gamescreen | Notes |
@@ -86,7 +79,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Lighthouse Audit
-
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
