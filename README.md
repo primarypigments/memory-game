@@ -2,7 +2,7 @@
 
 Crazy Memory gives space to critical thinking and that helps children and adults nurture their attention to detail. Memory games can improve visual recognition. With many memory games based on spotting differences, or linking two related images, children and the elderly can improve their visual discrimination.
 
-Here's your deployed site as an example:
+
 https://ui.dev/amiresponsive?url=https://primarypigments.github.io/memory-game
 
 ![screenshot](documentation/mockup.png)
