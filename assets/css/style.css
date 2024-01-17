@@ -277,7 +277,10 @@ footer {
 /*laptops and up*/
 @media screen and (min-width: 992px) {
 
-
+    #logo {
+        font-size: 4vw;
+    }
+    
     #start {
 
         background: url("../images/crazymemory.jpg") no-repeat top center fixed;
